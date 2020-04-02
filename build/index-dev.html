@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>自在小铺</title>
+</head>
+<body>
+<!-- app -->
+<div id="app"></div>
+<!-- js -->
+<script type="application/javascript">
+    const i = window.location.href.substr(0, 5) === 'https' ? 'https:' : 'http:';
+    window.C = {
+        VUE_ENV: "DEV",
+        BASE_URL: i + "//127.0.0.1:6020"
+    };
+</script>
+</body>
+</html>
